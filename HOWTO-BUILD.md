@@ -11,8 +11,8 @@
 PowerShellターミナルを開き、以下を実行する。
 
 ```PowerShell
-$ENV:http_proxy="http://proxy.yourcompany.co.jp:8080" ※必要な場合(適宜読み替え)
-$ENV:https_proxy="http://proxy.yourcompany.co.jp:8080" ※必要な場合(適宜読み替え)
+$ENV:http_proxy="http://proxy601.ad.mdis.co.jp:8080"
+$ENV:https_proxy="http://proxy601.ad.mdis.co.jp:8080"
 cd C:\Users\$env:username\workspace\mekakushi
 python -m venv .venv
 & .venv/Scripts/Activate.ps1
@@ -52,4 +52,5 @@ deactivate
 exit
 ```
 
-`dist`ディレクトリ配下にEXEファイル（mekakushi.exe）が生成される。
+`dist` ディレクトリ配下に `mekakushi` ディレクトリ（とEXEファイルやその他ファイル）が生成される。  
+その `mekakushi` ディレクトリを7zでアーカイブ化する（配布用に）。
